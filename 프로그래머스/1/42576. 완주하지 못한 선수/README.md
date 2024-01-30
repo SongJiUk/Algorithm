@@ -1,3 +1,7 @@
+# 문제를 제대로 읽어야겠다. 
+completion의 길이는 participant의 길이보다 1 작습니다. 이 문단만 제대로 봤어도 그냥 정렬하고 찾았을텐데
+쓸데없이 해시맵까지 찾아봤네
+
 # [level 1] 완주하지 못한 선수 - 42576 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42576) 
