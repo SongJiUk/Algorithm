@@ -1,3 +1,8 @@
+# 해시로 풀면 좋을거같은데 도저히 생각이 안난다.
+이제 해시를 쓸때는 unoredered_map을 주로 써야겠다.
+
+풀이를 보니 해시맵을 한글자씩 받아와서 비교하는것이 있다... 좀만 더 생각해볼걸
+
 # [level 2] 전화번호 목록 - 42577 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42577) 
