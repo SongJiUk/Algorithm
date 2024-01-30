@@ -1,3 +1,11 @@
+#set!
+세상엔 똑똑한 사람들이 많다 내가 쓴 코드를 한줄로 바꿀수도 있네
+
+
+unordered_set<int> s(nums.begin(), nums.end());
+return min(nums.size() / 2, s.size());
+
+브라보..
 # [level 1] 폰켓몬 - 1845 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/1845) 
