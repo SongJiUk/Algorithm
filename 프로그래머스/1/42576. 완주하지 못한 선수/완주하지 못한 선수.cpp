@@ -19,3 +19,23 @@ string solution(vector<string> participant, vector<string> completion) {
     } 
     return participant[participant.size() -1 ];
 } 
+
+//해시맵 사용
+string solution(vector<string> participant, vector<string> completion) {
+    string answer = "";
+
+    unordered_map<string, int> um;
+
+    for(const auto name : completion)
+    {
+        um[name]++;
+    }
+
+    for(auto name : participant)
+    {
+        um[name]--;
+        if(um[name] < 0) answer = name;
+    }
+
+    return answer;
+}
