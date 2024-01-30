@@ -3,6 +3,9 @@
 
 풀이를 보니 해시맵을 한글자씩 받아와서 비교하는것이 있다... 좀만 더 생각해볼걸
 
+
+if(hash_map[phone_number])여기서 값을 등록안했는데도 hash_map에 값이 들어간다
+몰랐네..
 # [level 2] 전화번호 목록 - 42577 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42577) 
