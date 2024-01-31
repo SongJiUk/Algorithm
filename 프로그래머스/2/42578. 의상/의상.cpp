@@ -13,13 +13,14 @@ int answer = 1;
     {
         um[clothes[i][1]]++;
     }
-    
+
+    //각 옷의 종류별 경우의 수를 곱해준다.
     for (auto a : um)
     {
         answer *= a.second + 1;
     }
 
-
+    //아무것도 입지 않은경우
     answer -= 1;
     return answer;    return answer;
 }
