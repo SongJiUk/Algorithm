@@ -1,3 +1,6 @@
+# 비교적 쉽게풀었네
+turn_left, turn_right이것만 더기억하자.
+
 # [Gold V] 로봇 청소기 - 14503 
 
 [문제 링크](https://www.acmicpc.net/problem/14503) 
