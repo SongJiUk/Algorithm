@@ -1,3 +1,6 @@
+# 다들 2중for문으로 풀었네..
+괜히 이렇게 푼건가 싶네
+
 # [Silver III] 햄버거 분배 - 19941 
 
 [문제 링크](https://www.acmicpc.net/problem/19941) 
