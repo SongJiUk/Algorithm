@@ -1,3 +1,6 @@
+# 문제를 똑바로읽자
+stoi로 했다가 OOB가 났네.. 100자를 넣을만한 자료형은 없으니까 ㅋㅋㅋ
+
 # [Silver IV] 수학숙제 - 2870 
 
 [문제 링크](https://www.acmicpc.net/problem/2870) 
