@@ -1,3 +1,6 @@
+# DP...
+괜히 주석처리된곳때문에 고민했네 할필요가없었는데 ㅋㅋㅋㅋ 
+
 # [Silver II] 연속합 - 1912 
 
 [문제 링크](https://www.acmicpc.net/problem/1912) 
