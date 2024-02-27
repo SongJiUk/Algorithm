@@ -22,16 +22,21 @@ void DFS(int _count, int _sum)
     {
         if(_sum == 100) 
         {
-            if(!flag)
-            {
-                flag = true;
                 for(int i =0; i< MAX; i++)
                 {
                     if(isVisit[i]) v.push_back(vec[i]);
                 }
-            }
             
-            return;
+            
+    sort(v.begin(), v.end());
+
+
+    for(int i =0; i<v.size(); i++)
+    {
+        cout << v[i] << endl;
+    }
+            
+            exit(0);
         }
     }
     else
@@ -67,11 +72,4 @@ int main(void)
 
     DFS(0, 0);
 
-    sort(v.begin(), v.end());
-
-
-    for(int i =0; i<v.size(); i++)
-    {
-        cout << v[i] << endl;
-    }
 }
