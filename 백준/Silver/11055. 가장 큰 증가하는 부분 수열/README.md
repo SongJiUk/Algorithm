@@ -1,3 +1,7 @@
+# DP는 항상 헷갈리네
+점화식 빨리 마스터하고싶다
+
+
 # [Silver II] 가장 큰 증가하는 부분 수열 - 11055 
 
 [문제 링크](https://www.acmicpc.net/problem/11055) 
