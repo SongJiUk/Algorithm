@@ -12,19 +12,16 @@ typedef long long ll;
 #define MAX 1e12
 using namespace std;
 
-vector<long long> vec;
+vector<ll> vec;
 int N, M;
-long min_tree = 0;
-long long height = 0;
+ll min_tree = 0;
+ll height = 0;
 
-bool compare(long long a, long long b)
-{
-    return a < b;
-}
 
-long long TreeCut(long long _m)
+
+ll TreeCut(ll _m)
 {
-    long long num = 0;
+    ll num = 0;
     for (int i = 0; i < N; i++)
     {
         if (vec[i] > _m)
@@ -34,14 +31,14 @@ long long TreeCut(long long _m)
     return num;
 }
 
-int binary_searchs(long long _target, long long _left, long long _right)
+int binary_searchs(ll _target, ll _left, ll _right)
 {
     while (_left <= _right)
     {
-        long long mid = (_left + _right) / 2;
+        ll mid = (_left + _right) / 2;
 
         // 자른 나무의 합.
-        long long tree_sum = TreeCut(mid);
+        ll tree_sum = TreeCut(mid);
 
         // 자른 나무의 합이 타겟과 같으면 해당 높이 반환
         if (tree_sum == _target)
@@ -84,7 +81,7 @@ int main(void)
 
     for (int i = 0; i < N; i++)
     {
-        long long x;
+        ll x;
         cin >> x;
         vec.push_back(x);
     }
