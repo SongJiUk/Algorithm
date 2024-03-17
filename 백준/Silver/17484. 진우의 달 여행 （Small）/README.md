@@ -1,3 +1,8 @@
+# DP..
+요 며칠동안 DP를 자주봐서 그런가 바로 DP인걸 알아챘다.</br>
+조건 걸어주고 재귀로 풀어주면 금방 풀 수 있다.</br>
+근데 문제가 small이 있다면 big도 있다는건데 big은 전체탐색을 쓰면 틀리겠지?</br>
+
 # [Silver III] 진우의 달 여행 (Small) - 17484 
 
 [문제 링크](https://www.acmicpc.net/problem/17484) 
