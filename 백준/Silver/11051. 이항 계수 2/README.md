@@ -1,3 +1,11 @@
+# 이항계수 문제 기억하자!
+
+이항계수는 nCk = (n/k) = n! / k!(n-k)! 이렇게 표현할 수 있음.</br>
+근데 더 쉬운 방법은 파스칼 삼각형을 생각하면 된다.</br>
+파스킬 삼각형은
+![image](https://github.com/SongJiUk/Algorithm/assets/67099323/3d9a0b4a-8f31-40ac-a33a-cacf1afb71cc)
+
+
 # [Silver II] 이항 계수 2 - 11051 
 
 [문제 링크](https://www.acmicpc.net/problem/11051) 
