@@ -11,79 +11,53 @@ typedef long long ll;
 #define MAX 1e9
 using namespace std;
 
-class medal
-{
-public:
-    medal(int _gold, int _silver, int _bronze)
-    {
-        gold = _gold;
-        silver = _silver;
-        bronze = _bronze;
-    }
 
-    int gold = 0;
-    int silver = 0;
-    int bronze = 0;
-};
-int N, K;
-
-vector<pair<int, medal>> vec;
-bool isSame[1000];
-int ranks[1000] = {1,};
-bool cmp(pair<int, medal> a, pair<int, medal> b)
-{
-    if (a.second.gold == b.second.gold && a.second.silver == b.second.silver && a.second.bronze == b.second.bronze)
-    {
-        isSame[a.first] = true;
-        isSame[b.first] = true;
-        return a.first < b.first;
-    }
-
-    if (a.second.gold == b.second.gold && a.second.silver == b.second.silver)
-        return a.second.bronze > b.second.bronze;
-
-    if (a.second.gold == b.second.gold)
-        return a.second.silver > b.second.silver;
-
-    return a.second.gold > b.second.gold;
-}
-
+int N, K, ranks = 0;
+int Gold[1001];
+int Silver[1001];
+int Bronze[1001];
 void Input()
 {
     cin >> N >> K;
 
     for (int i = 0; i < N; i++)
     {
-        int num, G, S, B;
-        cin >> num >> G >> S >> B;
-        vec.push_back({num, medal(G, S, B)});
+        int index;
+        cin >> index;
+        cin >> Gold[index] >> Silver[index] >> Bronze[index];
     }
 }
 
 void Init()
 {
-    sort(vec.begin(), vec.end(), cmp);
-    for(int i =0; i<1000; i++)
-    {
-        ranks[i] = 1;
-    }
+
 }
 
 void Slove()
 {
-    int sameNum = 1;
-    for (int i = 0; i < N - 1; i++)
-    {
-        if (isSame[vec[i].first] && isSame[vec[i + 1].first])
+   for(int i =1; i<= N; i++)
+   {
+        if(Gold[i] > Gold[K])
         {
-            ranks[vec[i+1].first] = ranks[vec[i].first];
+            ranks++;
         }
-        else
+        else if(Gold[i] == Gold[K])
         {
-            if(ranks[vec[i].first] == 1) ranks[vec[i].first] = i + 1;
-            ranks[vec[i+1].first] = i + 2;
+            if(Silver[i] > Silver[K])
+            {
+                ranks++;
+            }
+            else if(Silver[i] == Silver[K])
+            {
+                if(Bronze[i] > Bronze[K])
+                {
+                    ranks++;
+                }
+            }
         }
-    }
+   }
+
+   cout << ranks + 1 << endl;
 }
 
 int main(void)
@@ -96,5 +70,5 @@ int main(void)
 
     Slove();
 
-    cout << ranks[K] << endl;
+
 }
