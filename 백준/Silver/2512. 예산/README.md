@@ -1,3 +1,6 @@
+# break를 까먹지말자!
+break안해줘서 틀렸네...
+
 # [Silver II] 예산 - 2512 
 
 [문제 링크](https://www.acmicpc.net/problem/2512) 
