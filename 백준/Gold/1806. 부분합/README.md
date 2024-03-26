@@ -1,3 +1,7 @@
+# 투 포인터!!
+수가 너무 과하게 크길래 또 DP로 해야되나.. 했는데 투포인터였다. </br>
+잊지말고 기억하자! left, right!! </br>
+
 # [Gold IV] 부분합 - 1806 
 
 [문제 링크](https://www.acmicpc.net/problem/1806) 
