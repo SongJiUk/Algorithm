@@ -1,3 +1,5 @@
+# 중간에 디버그한건 좀 지우자...
+제발...!
 # [Bronze I] ROT13 - 11655 
 
 [문제 링크](https://www.acmicpc.net/problem/11655) 
