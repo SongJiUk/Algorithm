@@ -1,3 +1,6 @@
+# 아예 안입고있는것도 생각!
+쉽게쉽게 생각하자 쉽게 풀린다. </br>
+
 # [Silver III] 패션왕 신해빈 - 9375 
 
 [문제 링크](https://www.acmicpc.net/problem/9375) 
