@@ -1,3 +1,8 @@
+# BFS..
+isVisit가 있는거랑 없는거랑 차원이 다르구나.. </br>
+그리고 N >= K 가 되는경우, 그리고 n이 0부터 시작하는경우도 잊으면 안된다. </br>
+
+
 # [Gold IV] 숨바꼭질 2 - 12851 
 
 [문제 링크](https://www.acmicpc.net/problem/12851) 
