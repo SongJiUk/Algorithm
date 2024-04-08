@@ -22,8 +22,7 @@ int N, M;
 char MAPS[1001][1001];
 int isVisit[1001][1001][2];
 
-
-queue<pair<pair<int, int>, pair<int, int>>> q;
+queue<pair<int, pair<int, int>>> q;
 
 void Input()
 {
@@ -41,8 +40,8 @@ void Input()
 
 void Init()
 {
-    q.push({{1, 1}, {1, 0}});
-    isVisit[1][1][0] =1;
+    q.push({0, {1, 1}});
+    isVisit[1][1][0] = 1;
 }
 
 int Slove()
@@ -50,10 +49,10 @@ int Slove()
     while (!q.empty())
     {
 
-        int x = q.front().first.first;
-        int y = q.front().first.second;
-        int count = q.front().second.first;
-        int BreakWall = q.front().second.second;
+        int BreakWall = q.front().first;
+        int x = q.front().second.first;
+        int y = q.front().second.second;
+
         q.pop();
 
         if (x == N && y == M)
@@ -71,12 +70,12 @@ int Slove()
                 if (MAPS[nx][ny] == '0' && isVisit[nx][ny][BreakWall] == 0)
                 {
                     isVisit[nx][ny][BreakWall] = isVisit[x][y][BreakWall] + 1;
-                    q.push({{nx, ny}, {count, BreakWall}});
+                    q.push({BreakWall, {nx, ny}});
                 }
                 else if (MAPS[nx][ny] == '1' && BreakWall == 0 && isVisit[nx][ny][1] == 0)
                 {
                     isVisit[nx][ny][1] = isVisit[x][y][BreakWall] + 1;
-                    q.push({{nx,ny}, {count, 1}});
+                    q.push({1, {nx, ny}});
                 }
             }
         }
