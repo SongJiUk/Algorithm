@@ -6,13 +6,13 @@ Find함수에서 부모를 찾아주고, Union함수에서 부모를 갱신해�
 그리고 처음부터 넣어줘가면서 count를 늘려주고, 정점의 개수와 같아지면 그게 정답이다. </br>
 
 Union & Find 함수는 외워두는게 좋을것같다.(사실 이미 예전에 외웠었는데 쓸일이없어서, 까먹었다... ㅎ) </br>
-
+```
 int Find(int _x) </br>
 { </br>
   if(parent[_x] == _x) return _x; </br>
   else parent[_x] = Find(parent[_x]); </br>
 } </br>
-
+```
 void Union(int _x, int _y) </br>
 { </br>
   _x = Find(_x); </br>
