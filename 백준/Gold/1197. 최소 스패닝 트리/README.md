@@ -10,7 +10,7 @@ Union & Find 함수는 외워두는게 좋을것같다.(사실 이미 예전에 
 int Find(int _x) 
 { 
   if(parent[_x] == _x) return _x; 
-  else parent[_x] = Find(parent[_x]);
+  else return parent[_x] = Find(parent[_x]);
 } 
 
 void Union(int _x, int _y) 
