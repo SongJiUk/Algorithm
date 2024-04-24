@@ -7,21 +7,21 @@ Find함수에서 부모를 찾아주고, Union함수에서 부모를 갱신해�
 
 Union & Find 함수는 외워두는게 좋을것같다.(사실 이미 예전에 외웠었는데 쓸일이없어서, 까먹었다... ㅎ) </br>
 ```
-int Find(int _x) </br>
-{ </br>
-  if(parent[_x] == _x) return _x; </br>
-  else parent[_x] = Find(parent[_x]); </br>
-} </br>
-```
-void Union(int _x, int _y) </br>
-{ </br>
-  _x = Find(_x); </br>
-  _y = Find(_y); </br>
- </br>
-  if(_x < _y) parent[_y] = _x; </br>
-  else parent[_x] = _y;</br>
- }</br>
+int Find(int _x) 
+{ 
+  if(parent[_x] == _x) return _x; 
+  else parent[_x] = Find(parent[_x]);
+} 
 
+void Union(int _x, int _y) 
+{ 
+  _x = Find(_x); 
+  _y = Find(_y); 
+ 
+  if(_x < _y) parent[_y] = _x; 
+  else parent[_x] = _y;
+ }
+```
  머리속에 담아두자!! </br>
 
 # [Gold IV] 최소 스패닝 트리 - 1197 
