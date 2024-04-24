@@ -1,3 +1,29 @@
+# 최소 스패닝트리는 Union & Find!
+유니온 & 파인드는 진짜 오랜만에 들어봤다. </br>
+그래도 예전에 많이 해봐서 금방 풀 수 있었다. </br>
+Find함수에서 부모를 찾아주고, Union함수에서 부모를 갱신해주면 된다. </br>
+받아줄때 cost값을 기준으로 받아주고 정렬해준다. </br>
+그리고 처음부터 넣어줘가면서 count를 늘려주고, 정점의 개수와 같아지면 그게 정답이다. </br>
+
+Union & Find 함수는 외워두는게 좋을것같다.(사실 이미 예전에 외웠었는데 쓸일이없어서, 까먹었다... ㅎ) </br>
+
+int Find(int _x) </br>
+{ </br>
+  if(parent[_x] == _x) return _x; </br>
+  else parent[_x] = Find(parent[_x]); </br>
+} </br>
+
+void Union(int _x, int _y) </br>
+{ </br>
+  _x = Find(_x); </br>
+  _y = Find(_y); </br>
+ </br>
+  if(_x < _y) parent[_y] = _x; </br>
+  else parent[_x] = _y;</br>
+ }</br>
+
+ 머리속에 담아두자!! </br>
+
 # [Gold IV] 최소 스패닝 트리 - 1197 
 
 [문제 링크](https://www.acmicpc.net/problem/1197) 
