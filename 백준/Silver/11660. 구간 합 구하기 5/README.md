@@ -1,3 +1,9 @@
+# 부분 합문제! 규칙을 기억하자!
+
+
+![image](https://github.com/SongJiUk/Algorithm/assets/67099323/260fbc81-09de-4926-ac9f-d843819c743e)
+
+
 # [Silver I] 구간 합 구하기 5 - 11660 
 
 [문제 링크](https://www.acmicpc.net/problem/11660) 
