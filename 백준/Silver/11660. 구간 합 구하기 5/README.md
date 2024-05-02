@@ -1,7 +1,7 @@
 # 부분 합문제! 규칙을 기억하자!
 
 
-![image](https://github.com/SongJiUk/Algorithm/assets/67099323/da0b7ac2-ed6c-49c5-b6c1-ab5a2ab2da27)
+![image](https://github.com/SongJiUk/Algorithm/assets/67099323/da0b7ac2-ed6c-49c5-b6c1-ab5a2ab2da27) </br>
 이렇게 있다고 치면, 부분합을 이런 식으로 구해주면 된다. </br>
 DP[i][j] = MAP[i-1][j-1] + DP[i-1][j] + DP[i][j-1] - DP[i-1][j-1]; (여기서 MAP은 0부터 값이 입력되고, DP는 1부터 입력이됨(x =0,  y= 0인값들은 다 0임) </br>
 이게 부분합의 기본 식이다. 외워두도록 하자 외워놓으면 다른 문제에도 응용할 수 있음. </br>
