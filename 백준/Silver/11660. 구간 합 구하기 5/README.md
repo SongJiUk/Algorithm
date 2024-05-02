@@ -1,4 +1,4 @@
-![image](https://github.com/SongJiUk/Algorithm/assets/67099323/46c9f700-d58d-41b1-b2e3-48026bdc2667)# 부분 합문제! 규칙을 기억하자!
+# 부분 합문제! 규칙을 기억하자!
 
 
 ![image](https://github.com/SongJiUk/Algorithm/assets/67099323/da0b7ac2-ed6c-49c5-b6c1-ab5a2ab2da27)
