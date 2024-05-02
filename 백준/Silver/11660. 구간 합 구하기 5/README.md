@@ -1,7 +1,21 @@
-# 부분 합문제! 규칙을 기억하자!
+![image](https://github.com/SongJiUk/Algorithm/assets/67099323/46c9f700-d58d-41b1-b2e3-48026bdc2667)# 부분 합문제! 규칙을 기억하자!
 
 
-![image](https://github.com/SongJiUk/Algorithm/assets/67099323/260fbc81-09de-4926-ac9f-d843819c743e)
+![image](https://github.com/SongJiUk/Algorithm/assets/67099323/da0b7ac2-ed6c-49c5-b6c1-ab5a2ab2da27)
+이렇게 있다고 치면, 부분합을 이런 식으로 구해주면 된다. </br>
+DP[i][j] = MAP[i-1][j-1] + DP[i-1][j] + DP[i][j-1] - DP[i-1][j-1]; (여기서 MAP은 0부터 값이 입력되고, DP는 1부터 입력이됨(x =0,  y= 0인값들은 다 0임) </br>
+이게 부분합의 기본 식이다. 외워두도록 하자 외워놓으면 다른 문제에도 응용할 수 있음. </br>
+
+부분합을 구한 다음 (2,2) ~ (3,4)의 합을 구해야되는데 이 문제는 이렇게 풀면 된다. </br>
+2,2 를 x1,y1으로, 3,4 를 x2,y2로 표현한다고 하자.</br>
+
+그럼 (x2,y2)는 처음부터 x2,y2의 값들을 모두 더한 값이다. 여기서 (x1-1,y2)와 (x2, y1-1)을 빼준다. 그 후에 겹치는 부분인 (x1-1, y1-1)을 한번 더해준다. </br>
+
+![image](https://github.com/SongJiUk/Algorithm/assets/67099323/b277177f-33c8-4d4b-8348-6de6dd438aa8)
+그림으로 설명하면 빨간색 - 노란색 - 파란색 + 초록색 이라고 생각하면 된다. </br>
+
+처음 부분합을 접했을땐 많이 헷갈렸는데 그림으로 그려서 하다보니까 이제 이해가됐다. </br>
+
 
 
 # [Silver I] 구간 합 구하기 5 - 11660 
